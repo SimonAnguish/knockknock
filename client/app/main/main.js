@@ -20,6 +20,11 @@ angular.module('roomieApp')
         controller: 'JamesCtrl'
       }),
     $routeProvider
+      .when('/welcome', {
+        templateUrl: 'app/welcome/welcome.html',
+        controller: 'WelcomeCtrl'
+      }),
+    $routeProvider
       .when('/', {
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'

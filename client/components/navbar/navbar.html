@@ -7,8 +7,8 @@
       </button> -->
     <!-- <a href="/" class="navbar left">roomie</a> -->
     <!-- <div collapse="isCollapsed" class="navbar-collapse collapse"> -->
-      <ul class="nav navbar-nav vert-navs">
-        <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+      <ul class="nav navbar-nav blue-grey darken-4">
+        <li class="blue-grey darken-3" ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
             <a ng-class="{'away': !item.home}" ng-href="{{item.link}}">{{item.title}}</a>
         </li>
       </ul>

@@ -1,10 +1,9 @@
 body {
-    // background: #061B3A;
+    background-image: url("/assets/images/footer_lodyas.png");
 }
 
 .navbar-nav {
     min-height: 100vh;
-    background: #272A2C;
 
     > li {
         float: none;
@@ -13,6 +12,14 @@ body {
         text-align: center;
         font-size: 2em;
         font-weight: 100;
+
+        a {
+            color: #bbbbbb;
+
+            &:hover {
+                color: #646C73;
+            }
+        }
 
         .away {
             color: #646C73;

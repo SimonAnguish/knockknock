@@ -6,6 +6,10 @@ angular.module('roomieApp')
     $scope.chores = [{
       'name': 'Dishes'
     }];
+    $scope.events = [{
+      'name': 'CS Fair',
+      'location': '630 Main Street'
+    }];
 
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
