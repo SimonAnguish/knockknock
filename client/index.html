@@ -16,7 +16,9 @@
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
-    <link rel="stylesheet" href="app/app.css">
+    <link rel="stylesheet" href="app/app.css"> <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+            
       <!-- injector:css -->
       <!-- endinjector -->
     <!-- endbuild -->
@@ -62,8 +64,12 @@
         
         <script src="app/app.js"></script>
           <!-- injector:js -->
+          <script src="app/add_roommate/add_roommate.controller.js"></script>
+          <script src="app/add_roommate/add_roommate.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>
+          <script src="app/welcome/welcome.controller.js"></script>
+          <script src="app/welcome/welcome.js"></script>
           <script src="components/modal/modal.service.js"></script>
           <script src="components/navbar/navbar.controller.js"></script>
           <!-- endinjector -->

@@ -2,7 +2,16 @@
 
 angular.module('roomieApp')
   .controller('MainCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [];
+    $scope.users = [{
+      'name': 'Simon',
+      'home': true
+    },{
+      'name': 'Aaron',
+      'home': false
+    },{
+      'name': 'James',
+      'home': false
+    }];
 
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;

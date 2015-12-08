@@ -15,8 +15,41 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     padding: 0.2em 0;
 }
 
+body {
+	background-image: url('/assets/images/random_grey_variations.png');
+}
+
+.vert-nav {
+	display: block;
+
+	.nav {
+		max-width: 15em;
+		height: 100vh;
+		float: left;
+
+		li {
+			:hover {
+				background: #607d8b;
+			}
+		}
+
+		a {
+			text-align: center;
+			font-size: 2em;
+			font-weight: 100;
+			color: #cfd8dc;
+
+			&.away {
+				color: #78909c;
+			}
+		}
+	}
+}
+
 // Component styles are injected through grunt
 // injector
+@import 'add_roommate/add_roommate.scss';
 @import 'main/main.scss';
+@import 'welcome/welcome.scss';
 @import 'modal/modal.scss';
 // endinjector
