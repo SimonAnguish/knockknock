@@ -2,6 +2,7 @@
 
 angular.module('roomieApp')
   .controller('MainCtrl', function ($scope, $http) {
+
     $scope.users = [{
       'name': 'Simon',
       'home': true
@@ -12,6 +13,23 @@ angular.module('roomieApp')
       'name': 'James',
       'home': false
     }];
+
+    $scope.chores = [{
+      'name': 'Do the dishes',
+      'person': 'Simon';
+    },{
+      'name': 'Sweep the floors',
+      'person': 'Aaron'
+    },{
+      'name': 'Mop the kitchen',
+      'person': 'James'
+    },{
+      'name': 'Take out the trash',
+      'person': 'Aaron'
+    },{
+      'name': 'Clean the litter box',
+      'person': 'Simon'
+    }]
 
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;

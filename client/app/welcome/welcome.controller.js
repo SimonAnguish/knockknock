@@ -6,6 +6,7 @@ angular.module('roomieApp')
     $scope.user = '';
     $scope.api_path = '';
     $scope.user_info = [];
+    $scope.user_id = '';
 
     $scope.sign_in = function() {
       if ($scope.local_user == 'simon') {
@@ -21,9 +22,19 @@ angular.module('roomieApp')
         $scope.user = 'James';
         $scope.api_path = '/api/james';
       }
+
       $http.get($scope.api_path).success(function(awesomeThings) {
-        $scope.user_info = awesomeThings[2];
+        var user = awesomeThings[0];
+        $scope.user_info = user;
+        $scope.is_home = user.home;
+        $scope.user_id = user._id;
       });
+
+      if ($scope.is_home) {
+        $http.put($scope.api_path + '/' + $scope.user_id, { home: false });
+      } else {
+        $http.put($scope.api_path + '/' + $scope.user_id, { home: true });
+      }
     };
 
     
