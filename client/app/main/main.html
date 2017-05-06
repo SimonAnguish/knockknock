@@ -1,5 +1,6 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
+<<<<<<< HEAD
 <div class="row">
   <div class="col s5">
     <div class="card blue-grey darken-1" ng-show="{ local_user_access }">
@@ -12,3 +13,31 @@
     </div>
   </div>
 </div>
+=======
+  <div class="row">
+    <div class="col s3">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Chores</span>
+          <ul>
+          	<li ng-repeat="chore in chores">{{ chore.name }}</li>
+          </ul>
+        </div>
+        <div class="card-action">
+        </div>
+      </div>
+    </div>
+    <div class="col s3">
+      <div class="card indigo lighten-3">
+        <div class="card-content white-text">
+          <span class="card-title">Events</span>
+          <ul>
+          	<li ng-repeat="event in events">{{ event.name }} - {{ event.location }}</li>
+          </ul>
+        </div>
+        <div class="card-action">
+        </div>
+      </div>
+    </div>
+  </div>
+>>>>>>> 2d8cbaca725315cf46d42fff86c586038eb47363

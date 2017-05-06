@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="vert-nav" ng-controller="NavbarCtrl">
   <div class="nav-wrapper">
     <ul class="nav blue-grey darken-4">
@@ -7,3 +8,22 @@
     </ul>
   </div>
 </div>
+=======
+<div class="nav-wrapper" ng-controller="NavbarCtrl">
+      <!-- <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> -->
+    <!-- <a href="/" class="navbar left">roomie</a> -->
+    <!-- <div collapse="isCollapsed" class="navbar-collapse collapse"> -->
+      <ul class="nav navbar-nav blue-grey darken-4">
+        <li class="blue-grey darken-3" ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+            <a ng-class="{'away': !item.home}" ng-href="{{item.link}}">{{item.title}}</a>
+        </li>
+      </ul>
+    <!-- </div> -->
+  <!-- </div> -->
+</div>
+>>>>>>> 2d8cbaca725315cf46d42fff86c586038eb47363
